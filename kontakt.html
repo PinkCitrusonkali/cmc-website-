@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kontakt – Cash mit Content</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- NAVIGATION -->
+  <nav class="nav">
+    <div class="container nav-inner">
+      <a href="index.html" class="logo"><img src="cmclogo.png" alt="Cash mit Content" class="logo-img" /></a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html#warum">Warum</a></li>
+        <li><a href="index.html#kurse">Kurse</a></li>
+        <li><a href="index.html#ueber-mich">Über uns</a></li>
+        <li><a href="kontakt.html" class="btn-nav">Jetzt starten</a></li>
+      </ul>
+      <button class="hamburger" id="hamburger" onclick="toggleMenu()" aria-label="Menü öffnen">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- INHALT -->
+  <section class="subpage">
+    <div class="container subpage-inner">
+      <div class="kontakt-page">
+
+        <div class="kontakt-page-left">
+          <div class="section-label">Kontakt</div>
+          <h1>Meld dich<br />gerne bei uns.</h1>
+          <p>Hast du Fragen zu einem Kurs, brauchst du Hilfe oder möchtest einfach Hallo sagen? Wir antworten innerhalb von 24 Stunden.</p>
+
+          <div class="kontakt-infos">
+            <div class="kontakt-info-item">
+              <div class="kontakt-info-icon">✉️</div>
+              <div>
+                <strong>E-Mail</strong>
+                <a href="mailto:cashmitcontent@gmx.de">cashmitcontent@gmx.de</a>
+              </div>
+            </div>
+            <div class="kontakt-info-item">
+              <div class="kontakt-info-icon">📍</div>
+              <div>
+                <strong>Adresse</strong>
+                <span>Kreuzstraße 17, 48143 Münster</span>
+              </div>
+            </div>
+            <div class="kontakt-info-item">
+              <div class="kontakt-info-icon">⏱️</div>
+              <div>
+                <strong>Antwortzeit</strong>
+                <span>Innerhalb von 24 Stunden</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="kontakt-page-right">
+          <form class="kontakt-form kontakt-form-lg" id="kontaktForm">
+            <div class="form-row">
+              <input type="text" placeholder="Dein Name" required />
+              <input type="email" placeholder="Deine E-Mail" required />
+            </div>
+            <input type="text" placeholder="Betreff" />
+            <textarea placeholder="Deine Nachricht..." rows="6" required></textarea>
+            <button type="submit" class="btn-primary">Nachricht senden →</button>
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div class="logo"><img src="cmclogo.png" alt="Cash mit Content" class="logo-img" /></div>
+      <p>© 2026 Cash mit Content. Alle Rechte vorbehalten.</p>
+      <div class="footer-links">
+        <a href="impressum.html">Impressum</a>
+        <a href="datenschutz.html">Datenschutz</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
