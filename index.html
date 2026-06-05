@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cash mit Content</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- COOKIE BANNER -->
+  <div class="cookie-banner" id="cookieBanner">
+    <div class="cookie-content">
+      <p>🍪 Wir verwenden Cookies, um dein Erlebnis zu verbessern. <a href="#">Mehr erfahren</a></p>
+      <div class="cookie-actions">
+        <button class="btn-cookie-decline" onclick="closeCookie()">Ablehnen</button>
+        <button class="btn-cookie-accept" onclick="closeCookie()">Akzeptieren</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- NAVIGATION -->
+  <nav class="nav">
+    <div class="container nav-inner">
+      <div class="logo"><img src="cmclogo.png" alt="Cash mit Content" class="logo-img" /></div>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#warum">Warum</a></li>
+        <li><a href="#kurse">Kurse</a></li>
+        <li><a href="#ueber-mich">Über uns</a></li>
+        <li><a href="#kontakt" class="btn-nav">Jetzt starten</a></li>
+      </ul>
+      <button class="hamburger" id="hamburger" onclick="toggleMenu()" aria-label="Menü öffnen">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="container hero-inner">
+      <span class="badge fade-in">Dein Weg zur finanziellen Freiheit</span>
+      <h1 class="fade-in delay-1">Verdiene Geld mit<br /><span class="highlight">deinem Content.</span></h1>
+      <p class="hero-sub fade-in delay-2">Lerne, wie du dein Wissen, deine Leidenschaft und deine Inhalte in ein echtes Einkommen verwandelst — Schritt für Schritt, auch als Anfänger.</p>
+      <div class="hero-actions fade-in delay-3">
+        <a href="#kurse" class="btn-primary">Alle Kurse entdecken</a>
+        <a href="#warum" class="btn-ghost">Warum Cash mit Content?</a>
+      </div>
+      <div class="hero-stats fade-in delay-4">
+        <div class="stat">
+          <strong>100%</strong>
+          <span>Praxisnah</span>
+        </div>
+        <div class="stat">
+          <strong>Sofort</strong>
+          <span>Umsetzbar</span>
+        </div>
+        <div class="stat">
+          <strong>Für</strong>
+          <span>Jeden Anfänger</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ZAHLEN BANNER -->
+  <section class="zahlen-banner reveal">
+    <div class="container zahlen-inner">
+      <div class="zahl">
+        <strong>1.200+</strong>
+        <span>Teilnehmer</span>
+      </div>
+      <div class="zahl-divider"></div>
+      <div class="zahl">
+        <strong>4.9 ★</strong>
+        <span>Durchschnittsbewertung</span>
+      </div>
+      <div class="zahl-divider"></div>
+      <div class="zahl">
+        <strong>30 Tage</strong>
+        <span>Geld-zurück-Garantie</span>
+      </div>
+      <div class="zahl-divider"></div>
+      <div class="zahl">
+        <strong>95%</strong>
+        <span>Weiterempfehlungsrate</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- WARUM -->
+  <section class="warum" id="warum">
+    <div class="container reveal">
+      <div class="section-label">Das große Warum</div>
+      <h2 class="section-title">Du hast mehr Potenzial, als du denkst.</h2>
+      <p class="section-sub">Die meisten Menschen glauben, dass Online-Einkommen nur für "die anderen" funktioniert. Die Wahrheit ist: Du brauchst kein großes Publikum, keine teuren Tools und keine Jahre Erfahrung. Du brauchst das richtige Wissen — und den Mut, anzufangen.</p>
+      <div class="cards">
+        <div class="card">
+          <div class="card-icon">💡</div>
+          <h3>Dein Wissen ist wertvoll</h3>
+          <p>Was dir selbstverständlich erscheint, ist für andere Gold wert. Wir zeigen dir, wie du es verpackst und verkaufst.</p>
+        </div>
+        <div class="card">
+          <div class="card-icon">🚀</div>
+          <h3>Kein langer Anlauf nötig</h3>
+          <p>Mit den richtigen Strategien kannst du schneller starten als du glaubst — ohne jahrelangen Aufbau.</p>
+        </div>
+        <div class="card">
+          <div class="card-icon">🔁</div>
+          <h3>Einmal erstellen, immer verdienen</h3>
+          <p>Content arbeitet für dich, auch während du schläfst. Passives Einkommen ist kein Mythos — es ist ein System.</p>
+        </div>
+        <div class="card">
+          <div class="card-icon">🎯</div>
+          <h3>Schritt-für-Schritt Anleitung</h3>
+          <p>Keine vagen Versprechen. Klare Schritte, echte Ergebnisse. Jeder Kurs ist so aufgebaut, dass du direkt umsetzt.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- WIE ES FUNKTIONIERT -->
+  <section class="wie-es-funktioniert" id="wie">
+    <div class="container reveal">
+      <div class="section-label">Der Weg</div>
+      <h2>So funktioniert's</h2>
+      <p class="section-sub">Drei einfache Schritte trennen dich von deinem ersten Einkommen mit Content.</p>
+      <div class="schritte">
+        <div class="schritt">
+          <div class="schritt-nummer">01</div>
+          <div class="schritt-content">
+            <h3>📚 Lernen</h3>
+            <p>Schau die Lektionen in deinem eigenen Tempo und baue Schritt für Schritt dein Wissen auf.</p>
+          </div>
+        </div>
+        <div class="schritt-arrow">→</div>
+        <div class="schritt">
+          <div class="schritt-nummer">02</div>
+          <div class="schritt-content">
+            <h3>🛠️ Umsetzen</h3>
+            <p>Wende das Gelernte direkt an — jeder Kurs ist so aufgebaut, dass du sofort loslegen kannst.</p>
+          </div>
+        </div>
+        <div class="schritt-arrow">→</div>
+        <div class="schritt">
+          <div class="schritt-nummer">03</div>
+          <div class="schritt-content">
+            <h3>💰 Verdienen</h3>
+            <p>Dein Content arbeitet für dich — rund um die Uhr, automatisch und skalierbar ohne mehr Zeiteinsatz.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- KURSE -->
+  <section class="kurse" id="kurse">
+    <div class="container reveal">
+      <div class="section-label">Das Programm</div>
+      <h2>Alle Kurse im Überblick</h2>
+      <p class="section-sub">Jeder Kurs ist ein eigenständiges Modul — du kannst einzeln einsteigen oder das komplette Programm durchlaufen.</p>
+      <div class="kurse-grid kurse-grid-double">
+        <div class="kurs-card kurs-card-accordion">
+          <div class="kurs-header" onclick="toggleKurs(this)">
+            <div>
+              <div class="kurs-tag">Kurs 1</div>
+              <h3>Starter</h3>
+              <p>Dein entspannter Einstieg ins profitable Content-Business.</p>
+            </div>
+            <div class="kurs-toggle-icon">
+              <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                <path d="M5 7.5L10 12.5L15 7.5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </div>
+          </div>
+          <div class="kurs-details">
+            <div class="kurs-details-inner">
+              <ul class="kurs-liste">
+                <li>🎧 <span>Praktische Audiosektionen – höre sie wann und wo du willst (beim Spazieren, Autofahren oder Sport)</span></li>
+                <li>📋 <span>Klare Schritt-für-Schritt-Anleitungen</span></li>
+                <li>✅ <span>Fertige Arbeitsblätter & Checklisten für die direkte Umsetzung</span></li>
+                <li>🏆 <span>Meine besten Vorlagen und echte Praxiserfahrungen – nur das, was wirklich funktioniert</span></li>
+              </ul>
+              <a href="https://www.digistore24.com/product/691350" target="_blank" class="btn-primary">Jetzt starten →</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="kurs-card kurs-card-accordion">
+          <div class="kurs-header" onclick="toggleKurs(this)">
+            <div>
+              <div class="kurs-tag">Kurs 2</div>
+              <h3>Scaling</h3>
+              <p>Skaliere dein Wissen und dein Business auf das nächste Level.</p>
+            </div>
+            <div class="kurs-toggle-icon">
+              <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                <path d="M5 7.5L10 12.5L15 7.5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </div>
+          </div>
+          <div class="kurs-details">
+            <div class="kurs-details-inner">
+              <ul class="kurs-liste">
+                <li>📈 <span>Lerne, wie erfolgreiche Creator aus einzelnen Beiträgen ein skalierbares Content-System aufbauen</span></li>
+                <li>🎯 <span>Klare Strategien für mehr Reichweite, mehr Kunden und planbares Wachstum</span></li>
+                <li>✅ <span>Bewährte Checklisten, Vorlagen und Frameworks für die direkte Umsetzung</span></li>
+                <li>🏆 <span>Praxiserprobte Systeme zur Skalierung von Content, Traffic und Umsatz – verständlich erklärt und sofort anwendbar</span></li>
+              </ul>
+              <a href="https://www.digistore24.com/product/697500" target="_blank" class="btn-primary">Jetzt starten →</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- TESTIMONIALS -->
+  <section class="testimonials" id="testimonials">
+    <div class="container reveal">
+      <div class="section-label">Stimmen</div>
+      <h2>Was Teilnehmer sagen</h2>
+      <p class="section-sub">Echte Menschen, echte Ergebnisse. Das sagen Teilnehmer des Cash mit Content Programms.</p>
+      <div class="testimonials-grid">
+        <div class="testimonial-card">
+          <div class="testimonial-stars">★★★★★</div>
+          <p class="testimonial-text">"Ich hatte keine Ahnung wo ich anfangen soll — nach dem ersten Modul hatte ich bereits meine erste Idee monetarisiert. Absolut empfehlenswert!"</p>
+          <div class="testimonial-author">
+            <div class="author-avatar">LM</div>
+            <div>
+              <strong>Lisa M.</strong>
+              <span>Freelancerin, München</span>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-card">
+          <div class="testimonial-stars">★★★★★</div>
+          <p class="testimonial-text">"Endlich ein Kurs der nicht um den heißen Brei redet. Klare Schritte, sofort umsetzbar. Ich verdiene jetzt nebenbei mit Content was ich früher im Monat verdient habe."</p>
+          <div class="testimonial-author">
+            <div class="author-avatar">TK</div>
+            <div>
+              <strong>Tobias K.</strong>
+              <span>Content Creator, Berlin</span>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-card">
+          <div class="testimonial-stars">★★★★★</div>
+          <p class="testimonial-text">"Das Programm hat mir gezeigt, dass mein Wissen wirklich wertvoll ist. Die Community und der Support sind unschlagbar."</p>
+          <div class="testimonial-author">
+            <div class="author-avatar">SR</div>
+            <div>
+              <strong>Sarah R.</strong>
+              <span>Online-Unternehmerin, Hamburg</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ÜBER MICH -->
+  <section class="ueber-mich" id="ueber-mich">
+    <div class="container ueber-inner reveal">
+<div class="ueber-text">
+        <div class="section-label">Über das Programm</div>
+        <h2>Warum Cash mit Content ins Leben gerufen wurde.</h2>
+        <p>Wir kennen das Problem aus eigener Erfahrung: Kurs gekauft, voller Motivation gestartet — und dann? Entweder war der Inhalt zu oberflächlich, oder so gestreckt, dass man Wochen lernt und nie zur Umsetzung kommt.</p>
+        <p>Genau das wollten wir ändern. Bei Cash mit Content reden wir nicht um den heißen Brei. Du bekommst gezieltes Wissen — kompakt, klar und direkt umsetzbar. Kein Füllmaterial, keine stundenlangen Lektionen die nirgendwo hinführen.</p>
+        <p>Und das alles zu einem fairen Preis, der für jeden machbar ist. Denn gutes Wissen sollte keine Frage des Geldbeutels sein.</p>
+        <a href="#kurse" class="btn-primary">Kurse entdecken</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="faq" id="faq">
+    <div class="container reveal">
+      <div class="section-label">FAQ</div>
+      <h2>Häufige Fragen</h2>
+      <p class="section-sub">Alles was du wissen musst — kurz und klar beantwortet.</p>
+      <div class="faq-list">
+
+        <div class="faq-item">
+          <button class="faq-question" onclick="toggleFaq(this)">
+            <span>Für wen ist der Starter-Kurs geeignet?</span>
+            <div class="faq-icon"><svg width="18" height="18" viewBox="0 0 20 20" fill="none"><path d="M5 7.5L10 12.5L15 7.5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+          </button>
+          <div class="faq-answer">
+            <p>Für alle die neu im Content-Business sind und keine Vorkenntnisse haben. Du brauchst kein Publikum, keine teuren Tools und keine Erfahrung — nur den Willen anzufangen.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" onclick="toggleFaq(this)">
+            <span>Wie lange habe ich Zugang zum Kurs?</span>
+            <div class="faq-icon"><svg width="18" height="18" viewBox="0 0 20 20" fill="none"><path d="M5 7.5L10 12.5L15 7.5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+          </button>
+          <div class="faq-answer">
+            <p>Du bekommst dauerhaften Zugang — kein Ablaufdatum, kein Abo. Einmal kaufen, für immer nutzen.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" onclick="toggleFaq(this)">
+            <span>Wie ist der Kurs aufgebaut?</span>
+            <div class="faq-icon"><svg width="18" height="18" viewBox="0 0 20 20" fill="none"><path d="M5 7.5L10 12.5L15 7.5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+          </button>
+          <div class="faq-answer">
+            <p>Der Kurs besteht aus Audiosektionen die du flexibel hören kannst — beim Spazieren, im Auto oder beim Sport. Dazu bekommst du Arbeitsblätter und Checklisten für die direkte Umsetzung.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" onclick="toggleFaq(this)">
+            <span>Was unterscheidet Cash mit Content von anderen Kursen?</span>
+            <div class="faq-icon"><svg width="18" height="18" viewBox="0 0 20 20" fill="none"><path d="M5 7.5L10 12.5L15 7.5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+          </button>
+          <div class="faq-answer">
+            <p>Kein gestreckter Inhalt, kein Füllmaterial. Nur das was wirklich funktioniert — kompakt, klar und direkt umsetzbar. Zu einem fairen Preis der für jeden machbar ist.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" onclick="toggleFaq(this)">
+            <span>Gibt es eine Geld-zurück-Garantie?</span>
+            <div class="faq-icon"><svg width="18" height="18" viewBox="0 0 20 20" fill="none"><path d="M5 7.5L10 12.5L15 7.5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+          </button>
+          <div class="faq-answer">
+            <p>Ja. Du hast 14 Tage Zeit den Kurs zu testen. Wenn du nicht zufrieden bist bekommst du dein Geld zurück — ohne Fragen.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA BANNER -->
+  <section class="cta-banner reveal">
+    <div class="container cta-inner">
+      <h2>Bereit, deinen Content in Cash zu verwandeln?</h2>
+      <p>Starte noch heute. Die einzige Voraussetzung: der Wille, anzufangen.</p>
+      <a href="#kurse" class="btn-primary btn-large">Jetzt Kurs wählen</a>
+    </div>
+  </section>
+
+  <!-- KONTAKT -->
+  <section class="kontakt" id="kontakt">
+    <div class="container reveal">
+      <div class="section-label">Kontakt</div>
+      <h2>Fragen? Meld dich gerne.</h2>
+      <p class="section-sub">Schreib mir direkt — ich antworte innerhalb von 24 Stunden.</p>
+      <form class="kontakt-form">
+        <div class="form-row">
+          <input type="text" placeholder="Dein Name" required />
+          <input type="email" placeholder="Deine E-Mail" required />
+        </div>
+        <textarea placeholder="Deine Nachricht..." rows="5" required></textarea>
+        <button type="submit" class="btn-primary">Nachricht senden</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div class="logo"><img src="cmclogo.png" alt="Cash mit Content" class="logo-img" /></div>
+      <p>© 2026 Cash mit Content. Alle Rechte vorbehalten.</p>
+      <div class="footer-links">
+        <a href="impressum.html">Impressum</a>
+        <a href="datenschutz.html">Datenschutz</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
