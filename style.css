@@ -362,6 +362,38 @@ body {
   grid-template-columns: repeat(2, 1fr);
 }
 
+/* Kurs Banner */
+.kurs-banner {
+  height: 120px;
+  border-radius: var(--radius) var(--radius) 0 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 28px;
+  overflow: hidden;
+}
+
+.kurs-banner-starter {
+  background: linear-gradient(135deg, #60a5fa 0%, #2563eb 100%);
+}
+
+.kurs-banner-scaling {
+  background: linear-gradient(135deg, #1d4ed8 0%, #1e1b4b 100%);
+}
+
+.kurs-banner-icon {
+  font-size: 3rem;
+  filter: drop-shadow(0 4px 12px rgba(0,0,0,0.2));
+}
+
+.kurs-banner-tag {
+  font-size: 0.7rem;
+  font-weight: 800;
+  color: rgba(255,255,255,0.7);
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+}
+
 /* Accordion */
 .kurs-card-accordion {
   padding: 0;
