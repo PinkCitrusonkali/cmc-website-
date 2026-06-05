@@ -26,6 +26,33 @@ document.querySelectorAll('.nav-links a').forEach(a => {
   });
 });
 
+// Awards Slider
+let currentSlide = 0;
+const totalSlides = 3;
+
+function slideAward(dir) {
+  currentSlide = (currentSlide + dir + totalSlides) % totalSlides;
+  updateSlider();
+}
+
+function goToSlide(index) {
+  currentSlide = index;
+  updateSlider();
+}
+
+function updateSlider() {
+  document.getElementById('awardsSlider').style.transform = `translateX(-${currentSlide * 100}%)`;
+  document.querySelectorAll('.dot').forEach((d, i) => d.classList.toggle('active', i === currentSlide));
+}
+
+// Touch swipe support
+let touchStartX = 0;
+document.addEventListener('touchstart', e => { touchStartX = e.touches[0].clientX; });
+document.addEventListener('touchend', e => {
+  const diff = touchStartX - e.changedTouches[0].clientX;
+  if (Math.abs(diff) > 50) slideAward(diff > 0 ? 1 : -1);
+});
+
 // FAQ Accordion
 function toggleFaq(btn) {
   const item = btn.closest('.faq-item');

@@ -226,45 +226,34 @@
     </div>
   </section>
 
-  <!-- TESTIMONIALS -->
-  <section class="testimonials" id="testimonials">
+  <!-- AWARDS SLIDER -->
+  <section class="awards" id="awards">
     <div class="container reveal">
-      <div class="section-label">Stimmen</div>
-      <h2>Was Teilnehmer sagen</h2>
-      <p class="section-sub">Echte Menschen, echte Ergebnisse. Das sagen Teilnehmer des Cash mit Content Programms.</p>
-      <div class="testimonials-grid">
-        <div class="testimonial-card">
-          <div class="testimonial-stars">★★★★★</div>
-          <p class="testimonial-text">"Ich hatte keine Ahnung wo ich anfangen soll — nach dem ersten Modul hatte ich bereits meine erste Idee monetarisiert. Absolut empfehlenswert!"</p>
-          <div class="testimonial-author">
-            <div class="author-avatar">LM</div>
-            <div>
-              <strong>Lisa M.</strong>
-              <span>Freelancerin, München</span>
-            </div>
+      <div class="section-label">Erfolge</div>
+      <h2>Echte Ergebnisse unserer Teilnehmer</h2>
+      <p class="section-sub">Diese Awards wurden an Teilnehmer verliehen, die mit Cash mit Content echte Meilensteine erreicht haben.</p>
+      <div class="awards-slider-wrapper">
+        <div class="awards-slider" id="awardsSlider">
+          <div class="award-slide">
+            <img src="awards/award_diana.jpg" alt="Award Diana" />
+          </div>
+          <div class="award-slide">
+            <img src="awards/award_lisa.jpg" alt="Award Lisa" />
+          </div>
+          <div class="award-slide">
+            <img src="awards/award_rudolf.jpg" alt="Award Rudolf" />
           </div>
         </div>
-        <div class="testimonial-card">
-          <div class="testimonial-stars">★★★★★</div>
-          <p class="testimonial-text">"Endlich ein Kurs der nicht um den heißen Brei redet. Klare Schritte, sofort umsetzbar. Ich verdiene jetzt nebenbei mit Content was ich früher im Monat verdient habe."</p>
-          <div class="testimonial-author">
-            <div class="author-avatar">TK</div>
-            <div>
-              <strong>Tobias K.</strong>
-              <span>Content Creator, Berlin</span>
-            </div>
-          </div>
-        </div>
-        <div class="testimonial-card">
-          <div class="testimonial-stars">★★★★★</div>
-          <p class="testimonial-text">"Das Programm hat mir gezeigt, dass mein Wissen wirklich wertvoll ist. Die Community und der Support sind unschlagbar."</p>
-          <div class="testimonial-author">
-            <div class="author-avatar">SR</div>
-            <div>
-              <strong>Sarah R.</strong>
-              <span>Online-Unternehmerin, Hamburg</span>
-            </div>
-          </div>
+        <button class="slider-btn slider-btn-left" onclick="slideAward(-1)">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg>
+        </button>
+        <button class="slider-btn slider-btn-right" onclick="slideAward(1)">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
+        </button>
+        <div class="slider-dots" id="sliderDots">
+          <span class="dot active" onclick="goToSlide(0)"></span>
+          <span class="dot" onclick="goToSlide(1)"></span>
+          <span class="dot" onclick="goToSlide(2)"></span>
         </div>
       </div>
     </div>
