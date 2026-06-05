@@ -362,36 +362,40 @@ body {
   grid-template-columns: repeat(2, 1fr);
 }
 
-/* Kurs Banner */
-.kurs-banner {
-  height: 120px;
-  border-radius: var(--radius) var(--radius) 0 0;
+/* Kurs Icons */
+.kurs-header-top {
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  padding: 0 28px;
-  overflow: hidden;
+  gap: 12px;
+  margin-bottom: 14px;
 }
 
-.kurs-banner-starter {
-  background: linear-gradient(135deg, #60a5fa 0%, #2563eb 100%);
+.kurs-icon {
+  width: 44px;
+  height: 44px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
 }
 
-.kurs-banner-scaling {
-  background: linear-gradient(135deg, #1d4ed8 0%, #1e1b4b 100%);
+.kurs-icon-starter {
+  background: rgba(37,99,235,0.1);
+  color: var(--blue);
 }
 
-.kurs-banner-icon {
-  font-size: 3rem;
-  filter: drop-shadow(0 4px 12px rgba(0,0,0,0.2));
+.kurs-icon-scaling {
+  background: rgba(29,46,216,0.1);
+  color: #1d4ed8;
 }
 
-.kurs-banner-tag {
-  font-size: 0.7rem;
-  font-weight: 800;
-  color: rgba(255,255,255,0.7);
-  letter-spacing: 0.15em;
-  text-transform: uppercase;
+.kurs-starter {
+  border-top: 3px solid var(--blue);
+}
+
+.kurs-scaling {
+  border-top: 3px solid #1d4ed8;
 }
 
 /* Accordion */
