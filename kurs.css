@@ -352,6 +352,87 @@
   line-height: 1.5;
 }
 
+/* ── ZAHLEN BANNER ───────────────────────── */
+.kurs-zahlen-banner {
+  background: var(--bg);
+  border-top: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
+  padding: 28px 0;
+}
+
+.kurs-zahlen-inner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0;
+  flex-wrap: wrap;
+}
+
+.kurs-zahl-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 48px;
+  gap: 4px;
+}
+
+.kurs-zahl-item strong {
+  font-size: 1.35rem;
+  font-weight: 800;
+  color: var(--text);
+  letter-spacing: -0.02em;
+}
+
+.kurs-zahl-item span {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  font-weight: 500;
+}
+
+.kurs-zahlen-divider {
+  width: 1px;
+  height: 36px;
+  background: var(--border);
+  flex-shrink: 0;
+}
+
+/* ── ZWEITER CTA ─────────────────────────── */
+.kurs-mid-cta {
+  padding: 72px 0;
+  background: var(--blue);
+}
+
+.kurs-mid-cta-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+.kurs-mid-cta-text h2 {
+  font-size: clamp(1.5rem, 3vw, 2rem);
+  font-weight: 800;
+  color: #fff;
+  letter-spacing: -0.03em;
+  margin-bottom: 8px;
+}
+
+.kurs-mid-cta-text p {
+  color: rgba(255,255,255,0.75);
+  font-size: 1rem;
+}
+
+.kurs-mid-cta .btn-primary {
+  background: #fff;
+  color: var(--blue);
+  flex-shrink: 0;
+  white-space: nowrap;
+}
+
+.kurs-mid-cta .btn-primary:hover {
+  background: var(--bg2);
+}
+
 /* ── RESPONSIVE ──────────────────────────── */
 @media (max-width: 768px) {
   .kurs-hero { padding: 100px 0 60px; }
@@ -360,6 +441,10 @@
   .kurs-ergebnis-grid { grid-template-columns: repeat(2, 1fr); }
   .kurs-preis-box { padding: 36px 28px; }
   .kurs-section { padding: 72px 0; }
+  .kurs-zahlen-inner { gap: 16px; }
+  .kurs-zahl-item { padding: 12px 20px; }
+  .kurs-zahlen-divider { display: none; }
+  .kurs-mid-cta-inner { flex-direction: column; text-align: center; }
 }
 
 @media (max-width: 480px) {
