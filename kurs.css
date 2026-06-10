@@ -1,0 +1,334 @@
+/* ── KURS HERO ────────────────────────────── */
+.kurs-hero {
+  padding: 140px 0 100px;
+  background: linear-gradient(180deg, #eff6ff 0%, #ffffff 100%);
+  border-bottom: 1px solid var(--border);
+  text-align: center;
+}
+
+.kurs-hero-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: rgba(37,99,235,0.08);
+  color: var(--blue);
+  border: 1px solid rgba(37,99,235,0.15);
+  padding: 7px 18px;
+  border-radius: 50px;
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  margin-bottom: 28px;
+}
+
+.kurs-hero h1 {
+  font-size: clamp(2.8rem, 6vw, 5rem);
+  font-weight: 800;
+  letter-spacing: -0.04em;
+  line-height: 1.05;
+  color: var(--text);
+  margin-bottom: 20px;
+}
+
+.kurs-hero-sub {
+  font-size: 1.15rem;
+  color: var(--text-muted);
+  max-width: 540px;
+  margin: 0 auto 36px;
+  line-height: 1.7;
+}
+
+.kurs-hero-garantie {
+  margin-top: 20px;
+  font-size: 0.82rem;
+  color: var(--text-muted);
+  font-weight: 500;
+}
+
+/* ── KURS SECTIONS ───────────────────────── */
+.kurs-section {
+  padding: 100px 0;
+  border-top: 1px solid var(--border);
+}
+
+.kurs-intro { background: var(--bg); }
+.kurs-inhalte { background: var(--bg2); }
+.kurs-ergebnis { background: var(--bg); }
+.kurs-fuerwen { background: var(--bg2); }
+
+/* ── INTRO ───────────────────────────────── */
+.kurs-intro-inner {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 72px;
+  align-items: start;
+}
+
+.kurs-intro-text h2 {
+  font-size: clamp(1.6rem, 3vw, 2.2rem);
+  font-weight: 800;
+  letter-spacing: -0.03em;
+  color: var(--text);
+  line-height: 1.2;
+  margin-bottom: 20px;
+}
+
+.kurs-intro-text p {
+  color: var(--text-mid);
+  font-size: 1rem;
+  line-height: 1.75;
+  margin-bottom: 14px;
+}
+
+.kurs-intro-text strong { color: var(--text); }
+
+.kurs-intro-visual {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.kurs-visual-card {
+  background: var(--bg2);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  transition: border-color 0.2s, transform 0.2s;
+}
+
+.kurs-visual-card:hover { border-color: var(--border-hover); transform: translateX(4px); }
+
+.kurs-visual-icon { font-size: 1.5rem; margin-bottom: 4px; }
+
+.kurs-visual-card strong {
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: var(--text);
+}
+
+.kurs-visual-card span {
+  font-size: 0.875rem;
+  color: var(--text-muted);
+  line-height: 1.6;
+}
+
+/* ── INHALTE ─────────────────────────────── */
+.kurs-inhalte-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.kurs-inhalt-item {
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 28px 24px;
+  display: flex;
+  gap: 18px;
+  align-items: flex-start;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.kurs-inhalt-item:hover {
+  border-color: var(--border-hover);
+  box-shadow: 0 8px 24px rgba(37,99,235,0.06);
+}
+
+.kurs-inhalt-icon {
+  font-size: 1.8rem;
+  flex-shrink: 0;
+}
+
+.kurs-inhalt-item strong {
+  display: block;
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--text);
+  margin-bottom: 6px;
+}
+
+.kurs-inhalt-item p {
+  font-size: 0.875rem;
+  color: var(--text-muted);
+  line-height: 1.65;
+}
+
+/* ── ERGEBNIS ────────────────────────────── */
+.kurs-ergebnis h2 {
+  font-size: clamp(1.9rem, 4vw, 2.8rem);
+  font-weight: 800;
+  letter-spacing: -0.04em;
+  color: var(--text);
+  margin-bottom: 48px;
+  line-height: 1.15;
+}
+
+.kurs-ergebnis-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+.kurs-ergebnis-item {
+  background: var(--bg2);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 28px 24px;
+  text-align: center;
+  transition: border-color 0.2s, transform 0.2s;
+}
+
+.kurs-ergebnis-item:hover { border-color: var(--border-hover); transform: translateY(-3px); }
+
+.kurs-ergebnis-item span { font-size: 2rem; display: block; margin-bottom: 14px; }
+
+.kurs-ergebnis-item p {
+  font-size: 0.875rem;
+  color: var(--text-muted);
+  line-height: 1.65;
+}
+
+.kurs-ergebnis-item strong { color: var(--text); }
+
+/* ── FÜR WEN ─────────────────────────────── */
+.kurs-fuerwen h2 {
+  font-size: clamp(1.9rem, 4vw, 2.8rem);
+  font-weight: 800;
+  letter-spacing: -0.04em;
+  color: var(--text);
+  margin-bottom: 48px;
+  line-height: 1.15;
+}
+
+.fuerwen-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  max-width: 680px;
+}
+
+.fuerwen-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 20px 24px;
+  transition: border-color 0.2s;
+}
+
+.fuerwen-item:hover { border-color: var(--border-hover); }
+
+.fuerwen-check {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background: rgba(37,99,235,0.1);
+  color: var(--blue);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.85rem;
+  font-weight: 800;
+  flex-shrink: 0;
+}
+
+.fuerwen-item p {
+  font-size: 0.95rem;
+  color: var(--text-mid);
+  line-height: 1.6;
+}
+
+.fuerwen-item strong { color: var(--text); }
+
+/* ── PREIS CTA ───────────────────────────── */
+.kurs-cta {
+  padding: 100px 0;
+  background: linear-gradient(180deg, #eff6ff 0%, #dbeafe 100%);
+  border-top: 1px solid var(--border);
+}
+
+.kurs-cta-inner { display: flex; justify-content: center; }
+
+.kurs-preis-box {
+  background: #fff;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  padding: 48px 56px;
+  text-align: center;
+  max-width: 480px;
+  width: 100%;
+  box-shadow: 0 20px 60px rgba(37,99,235,0.1);
+}
+
+.kurs-preis-label {
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: var(--blue);
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  margin-bottom: 12px;
+}
+
+.kurs-preis {
+  font-size: 4rem;
+  font-weight: 900;
+  color: var(--text);
+  letter-spacing: -0.04em;
+  line-height: 1;
+  margin-bottom: 8px;
+}
+
+.kurs-preis-info {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  margin-bottom: 32px;
+}
+
+.kurs-garantie-box {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  background: var(--bg2);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 16px 20px;
+  margin-top: 24px;
+  text-align: left;
+}
+
+.kurs-garantie-box span { font-size: 1.4rem; flex-shrink: 0; }
+
+.kurs-garantie-box strong {
+  display: block;
+  font-size: 0.875rem;
+  font-weight: 700;
+  color: var(--text);
+  margin-bottom: 2px;
+}
+
+.kurs-garantie-box p {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  line-height: 1.5;
+}
+
+/* ── RESPONSIVE ──────────────────────────── */
+@media (max-width: 768px) {
+  .kurs-hero { padding: 100px 0 60px; }
+  .kurs-intro-inner { grid-template-columns: 1fr; gap: 40px; }
+  .kurs-inhalte-grid { grid-template-columns: 1fr; }
+  .kurs-ergebnis-grid { grid-template-columns: repeat(2, 1fr); }
+  .kurs-preis-box { padding: 36px 28px; }
+  .kurs-section { padding: 72px 0; }
+}
+
+@media (max-width: 480px) {
+  .kurs-ergebnis-grid { grid-template-columns: 1fr; }
+}
