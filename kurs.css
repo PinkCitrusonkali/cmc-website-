@@ -89,6 +89,7 @@
 .kurs-inhalte { background: var(--bg2); }
 .kurs-ergebnis { background: var(--bg); }
 .kurs-fuerwen { background: var(--bg2); }
+.kurs-vorher-nachher { background: var(--bg); }
 
 /* ── INTRO ───────────────────────────────── */
 .kurs-intro-inner {
@@ -350,6 +351,16 @@
   font-size: 0.8rem;
   color: var(--text-muted);
   line-height: 1.5;
+}
+
+/* ── VORHER NACHHER ──────────────────────── */
+.vorher-nachher-img {
+  width: 100%;
+  max-width: 860px;
+  display: block;
+  margin: 0 auto;
+  border-radius: 16px;
+  box-shadow: 0 16px 48px rgba(0,0,0,0.08);
 }
 
 /* ── ZAHLEN BANNER ───────────────────────── */
