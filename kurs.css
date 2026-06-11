@@ -363,6 +363,42 @@
   box-shadow: 0 16px 48px rgba(0,0,0,0.08);
 }
 
+/* ── SCALING HERO VISUAL ─────────────────── */
+.kurs-hero-scaling { background: linear-gradient(180deg, #eef2ff 0%, #ffffff 100%); }
+
+.scaling-hero-visual {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 100%;
+  max-width: 380px;
+}
+
+.scaling-stat {
+  background: #fff;
+  border: 1px solid var(--border);
+  border-left: 4px solid var(--blue);
+  border-radius: var(--radius);
+  padding: 24px 28px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 4px 16px rgba(37,99,235,0.07);
+}
+
+.scaling-stat-label {
+  font-size: 0.9rem;
+  color: var(--text-muted);
+  font-weight: 500;
+}
+
+.scaling-stat-value {
+  font-size: 1.8rem;
+  font-weight: 900;
+  color: var(--blue);
+  letter-spacing: -0.03em;
+}
+
 /* ── ZAHLEN BANNER ───────────────────────── */
 .kurs-zahlen-banner {
   background: var(--bg);
