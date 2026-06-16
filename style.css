@@ -724,6 +724,12 @@ body {
 
 .danke-btn { margin: 0 auto; }
 
+.digistore-hinweis {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  margin-top: 16px;
+}
+
 .roadmap-cover {
   width: 100%;
   max-width: 300px;
